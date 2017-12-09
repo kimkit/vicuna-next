@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+use Cicada\Application;
+use Cicada\Kernel;
+use Symfony\Component\Console\Input\ArgvInput;
+use Symfony\Component\Console\Output\ConsoleOutput;
+
+define('APP_PATH', dirname(__DIR__));
+define('APP_SRC_PATH', APP_PATH.'/src');
+define('APP_CONFIG_PATH', APP_PATH.'/config');
+define('VENDOR_PATH', dirname(APP_PATH).'/vendor');
+
+$loader = require VENDOR_PATH.'/autoload.php';
+$loader->addPsr4('', APP_SRC_PATH);
+
+$application = new Application(APP_PATH);
+$kernel = new Kernel($application);
+$code = $kernel->handle(new ArgvInput, new ConsoleOutput);
+exit($code);

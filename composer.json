@@ -1,0 +1,15 @@
+{
+    "name": "kimkit/cicada",
+    "license": "MIT",
+    "require": {
+        "kimkit/vicuna": "dev-master",
+        "laravel/lumen-framework": "5.5.*",
+        "illuminate/cookie": "5.5.*",
+        "illuminate/redis": "5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cicada\\": "src/"
+        }
+    }
+}
