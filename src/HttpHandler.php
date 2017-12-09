@@ -1,8 +1,5 @@
 <?php
 
-namespace Cicada;
-
-use Exception;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\Response;

@@ -1,7 +1,5 @@
 <?php
 
-namespace Cicada;
-
 use Monolog\Handler\AbstractHandler;
 use Monolog\Logger;
 

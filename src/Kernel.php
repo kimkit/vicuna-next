@@ -1,7 +1,5 @@
 <?php
 
-namespace Cicada;
-
 use Laravel\Lumen\Console\Kernel as BaseKernel;
 
 class Kernel extends BaseKernel

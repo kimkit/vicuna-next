@@ -1,5 +1,7 @@
 <?php
 
+namespace Greeter;
+
 class GreeterController
 {
     public function helloAction()

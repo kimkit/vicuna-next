@@ -8,6 +8,6 @@ return [
         require dirname(APP_PATH).'/src/HttpHandler.php';
     },
     'handlers' => [
-        Cicada\HttpHandler::class,
+        HttpHandler::class,
     ],
 ];

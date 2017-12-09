@@ -1,7 +1,5 @@
 <?php
 
-namespace Cicada;
-
 use Laravel\Lumen\Exceptions\Handler as BaseExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 

@@ -1,5 +1,7 @@
 <?php
 
+namespace Greeter;
+
 use Illuminate\Support\ServiceProvider;
 
 class GreeterServiceProvider extends ServiceProvider

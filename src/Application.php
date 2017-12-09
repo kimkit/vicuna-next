@@ -1,7 +1,5 @@
 <?php
 
-namespace Cicada;
-
 use Laravel\Lumen\Application as BaseApplication;
 use Symfony\Component\HttpFoundation\Request;
 

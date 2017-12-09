@@ -1,8 +1,6 @@
 #!/usr/bin/env php
 <?php
 
-use Cicada\Application;
-use Cicada\Kernel;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\ConsoleOutput;
 

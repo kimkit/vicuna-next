@@ -1,5 +1,9 @@
 <?php
 
+namespace Greeter;
+
+use Closure;
+
 class GreeterMiddleware
 {
     public function handle($request, Closure $next)

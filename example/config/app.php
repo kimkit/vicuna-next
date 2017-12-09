@@ -6,10 +6,10 @@ return [
     'log_file' => '/tmp/app.log',
     'log_level' => 'DEBUG',
     'providers' => [
-        'greeter' => GreeterServiceProvider::class,
+        'greeter' => Greeter\GreeterServiceProvider::class,
     ],
     'middlewares' => [
-        GreeterMiddleware::class,
+        Greeter\GreeterMiddleware::class,
     ],
     'routes' => [
         [
@@ -20,7 +20,7 @@ return [
         ],
         [
             'uri' => '/hello',
-            'action' => GreeterController::class.'@helloAction',
+            'action' => Greeter\GreeterController::class.'@helloAction',
         ],
     ],
     'commands' => [
