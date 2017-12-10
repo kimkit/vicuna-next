@@ -1,5 +1,5 @@
 {
-    "name": "kimkit/cicada",
+    "name": "kimkit/vicuna-next",
     "license": "MIT",
     "require": {
         "kimkit/vicuna": "dev-master",
