@@ -108,4 +108,20 @@ class Application extends BaseApplication
             ));
         }
     }
+
+    public function getConfigurationPath($name = null)
+    {
+        if (defined('APP_CONFIG_PATH') && file_exists($appConfigDir = APP_CONFIG_PATH.'/')) {
+            if (! $name) {
+                return $appConfigDir;
+            } else {
+                $appConfigPath = $appConfigDir.$name.'.php';
+                if (file_exists($appConfigPath)) {
+                    return $appConfigPath;
+                }
+            }
+        }
+
+        return parent::getConfigurationPath($name);
+    }
 }
