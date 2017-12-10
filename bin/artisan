@@ -7,7 +7,7 @@ use Symfony\Component\Console\Output\ConsoleOutput;
 define('APP_PATH', dirname(__DIR__));
 define('APP_SRC_PATH', APP_PATH.'/src');
 define('APP_CONFIG_PATH', APP_PATH.'/config');
-define('VENDOR_PATH', dirname(APP_PATH).'/vendor');
+define('VENDOR_PATH', APP_PATH.'/vendor');
 
 $loader = require VENDOR_PATH.'/autoload.php';
 $loader->addPsr4('', APP_SRC_PATH);

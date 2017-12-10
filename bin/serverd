@@ -4,7 +4,7 @@
 define('APP_PATH', dirname(__DIR__));
 define('APP_SRC_PATH', APP_PATH.'/src');
 define('APP_CONFIG_PATH', APP_PATH.'/config');
-define('VENDOR_PATH', dirname(APP_PATH).'/vendor');
+define('VENDOR_PATH', APP_PATH.'/vendor');
 
 putenv('VICUNA_SERVER_CONFIG_FILE='.APP_CONFIG_PATH.'/server.php');
 require VENDOR_PATH.'/kimkit/vicuna/src/Cli.php';
