@@ -1,0 +1,7 @@
+{
+    "chmod": "0755",
+    "directories": ["src", "vendor", "config"],
+    "main": "bin/serverd",
+    "output": "serverd.phar",
+    "stub": true
+}
