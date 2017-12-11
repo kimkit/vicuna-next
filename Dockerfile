@@ -5,11 +5,6 @@
 
 FROM alpine-php
 
-# please build binary first
-# https://box-project.github.io/box2/
-
-# box build
-
-COPY serverd.phar /usr/local/bin/
-CMD ["/usr/local/bin/serverd.phar", "start"]
+COPY . /app
+CMD ["/app/bin/serverd", "start"]
 EXPOSE 8000
