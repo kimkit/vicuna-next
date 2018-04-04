@@ -1,9 +1,4 @@
-# please build alpine-php image first
-
-# git clone https://github.com/kimkit/alpine-php.git
-# ./alpine-php/build.sh
-
-FROM alpine-php
+FROM registry.cn-hangzhou.aliyuncs.com/wuwenbin/alpine-php:0.1.0
 
 COPY . /app
 CMD ["/app/bin/serverd", "start"]
